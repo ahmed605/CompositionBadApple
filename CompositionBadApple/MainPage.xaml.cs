@@ -99,7 +99,7 @@ namespace CompositionBadApple
         private void PlayBtn_Click(object sender, RoutedEventArgs e)
         {
             DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(24);
+            timer.Interval = TimeSpan.FromMilliseconds(24); //yes, this isn't correct but it just works
             timer.Tick += (s, o) =>
             {
                 var f = frames[frame];
